@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
   "private": true,
+  "homepage": "https://poonia2000tushar-wq.github.io/Portfolio/",
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -25,5 +25,6 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
     "vite": "^8.0.12"
+    
   }
 }
