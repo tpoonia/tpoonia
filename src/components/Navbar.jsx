@@ -1,27 +1,16 @@
-export default function Navbar() {
-return(
-
-<nav
-style={{
-display:"flex",
-justifyContent:"space-between",
-padding:"30px 70px"
-}}
->
-
-<h2>Tushar</h2>
-
-<div>
-
-Home&nbsp;&nbsp;
-About&nbsp;&nbsp;
-Projects&nbsp;&nbsp;
-Contact
-
-</div>
-
-</nav>
-
-)
-
+export default function Navbar({ scrolled }) {
+  return (
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <a href="#hero" className="nav-logo">
+        T<span>.</span>Poonia
+      </a>
+      <ul className="nav-links">
+        {["About", "Experience", "Projects", "Skills", "Resume", "Contact"].map((item) => (
+          <li key={item}>
+            <a href={`#${item.toLowerCase()}`}>{item}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }

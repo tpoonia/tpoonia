@@ -1,82 +1,45 @@
-export default function Hero(){
-
-return(
-
-<section
-style={{
-
-height:"85vh",
-
-display:"flex",
-
-flexDirection:"column",
-
-justifyContent:"center",
-
-alignItems:"center",
-
-textAlign:"center"
-
-}}
->
-
-<p
-style={{
-color:"#8b5cf6"
-}}
->
-PORTFOLIO
-</p>
-
-<h1
-style={{
-fontSize:"90px"
-}}
->
-
-Hi,
-I'm
-
-<span
-style={{
-color:"#8b5cf6"
-}}
->
- Tushar
-</span>
-
-</h1>
-
-<p>
-Developer • Builder • Creator
-</p>
-
-<button
-
-style={{
-
-padding:"18px 40px",
-
-borderRadius:"50px",
-
-marginTop:"30px",
-
-background:"#8b5cf6",
-
-color:"white",
-
-border:"none"
-
-}}
-
->
-
-View Work
-
-</button>
-
-</section>
-
-)
-
+export default function Hero() {
+  return (
+    <section id="hero" className="hero">
+      <div className="hero-bg" />
+      <div className="hero-grid" />
+      <div className="container">
+        <div className="hero-content">
+          <div className="hero-eyebrow">Software Developer · AI Engineer · Jersey City, NJ</div>
+          <h1 className="hero-name">Tushar Poonia</h1>
+          <div className="hero-title">Backend & ML Engineer</div>
+          <p className="hero-bio">
+            3+ years building high-scale APIs and data pipelines at Tata Consultancy Services,
+            now pursuing an M.S. in AI at Yeshiva University. I turn complex engineering
+            challenges into measurable, production-ready solutions.
+          </p>
+          <div className="hero-actions">
+            <a href="#contact" className="btn btn-primary">
+              <span>Get in Touch</span>
+              <span>→</span>
+            </a>
+            <a href="#projects" className="btn btn-outline">View Projects</a>
+          </div>
+          <div className="hero-stats">
+            <div>
+              <div className="stat-num">3<span>+</span></div>
+              <div className="stat-label">Years at TCS</div>
+            </div>
+            <div>
+              <div className="stat-num">60<span>+</span></div>
+              <div className="stat-label">REST APIs Built</div>
+            </div>
+            <div>
+              <div className="stat-num">100M<span>+</span></div>
+              <div className="stat-label">Rows Optimized</div>
+            </div>
+            <div>
+              <div className="stat-num">3<span>×</span></div>
+              <div className="stat-label">Employee of Month</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
