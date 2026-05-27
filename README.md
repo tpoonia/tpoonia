@@ -1,110 +1,115 @@
-# Tushar Poonia — Portfolio
+# 🚀 Data Science & AI Projects
 
-> **Live site:** [poonia2000tushar-wq.github.io/Portfolio](https://poonia2000tushar-wq.github.io/Portfolio/)
-
-A production-grade personal portfolio built with **React + Vite + Tailwind CSS**, showcasing 3+ years of backend engineering and applied ML work at Tata Consultancy Services and Yeshiva University.
+> A collection of end-to-end machine learning systems spanning credit risk, healthcare, optimization, and autonomous AI agents.
 
 ---
 
-## ✦ About
+## 🔍 Explainable Credit Risk Model
 
-Impact-driven Software Developer and AI graduate student with deep experience in:
-- Designing and shipping **60+ REST APIs** powering enterprise banking platforms
-- Optimizing **100M+ row data pipelines** for real-time analytics (40% throughput increase)
-- Building explainable ML models with **92–95% accuracy** across credit risk and healthcare domains
+**Predicting loan default risk with full regulatory-grade explainability using ensemble methods and SHAP/LIME.**
 
-Currently pursuing an **M.S. in Artificial Intelligence** at Yeshiva University (GPA 3.8).
+| Metric | Value |
+|--------|-------|
+| 📊 Dataset | 50,000+ loan records |
+| 🎯 Accuracy | 92% |
+| 📈 AUC-ROC | 0.96 |
+| ⏱️ Auditor review time | ↓ 40% |
+
+**Models:** XGBoost · Random Forest · Logistic Regression
+
+**Explainability:** SHAP (global + local feature importance) · LIME (instance-level explanations)
+
+**Highlights:**
+- Trained and compared three models; XGBoost achieved best AUC-ROC at 0.96
+- Integrated SHAP summary plots and waterfall charts for model transparency
+- LIME explanations surfaced per-prediction reasoning for compliance audits
+- Reduced manual auditor review time by 40% through automated explanation reports
+
+**Tech Stack:** `Python` `XGBoost` `Scikit-learn` `SHAP` `LIME` `Pandas` `Matplotlib`
 
 ---
 
-## 🛠 Tech Stack
+## 🏥 Medical Disease Prediction System
 
-| Category | Technologies |
-|---|---|
-| **Frontend** | React 19, Vite 8, Tailwind CSS 4 |
-| **Deployment** | GitHub Pages via `gh-pages` |
-| **Languages** | JavaScript (JSX) |
+**Multi-disease classifier for early clinical diagnosis across several conditions using engineered clinical features.**
+
+| Metric | Value |
+|--------|-------|
+| 📊 Dataset | 20,000+ patient records |
+| 🎯 Accuracy | 95% |
+| 🔴 Recall | 98% |
+| 🔬 Features engineered | 30+ clinical features |
+| ✅ False negative reduction | 18% |
+
+**Models:** Support Vector Machine (SVM) · Random Forest · Neural Networks
+
+**Highlights:**
+- Engineered 30+ domain-informed clinical features (vitals, lab ratios, symptom composites)
+- Achieved 98% recall — minimizing missed diagnoses in high-stakes clinical scenarios
+- Reduced false negatives by 18% vs baseline through threshold tuning and ensemble voting
+- Benchmarked SVM, RF, and NN across multiple disease targets; best model selected per condition
+
+**Tech Stack:** `Python` `Scikit-learn` `TensorFlow/Keras` `Pandas` `NumPy` `Seaborn`
 
 ---
 
-## 🚀 Getting Started
+## 🧬 Genetic Algorithm Optimizer (Knapsack)
 
-```bash
-# Clone the repo
-git clone https://github.com/poonia2000tushar-wq/Portfolio.git
-cd Portfolio
+**Evolutionary optimizer solving the 0/1 Knapsack problem — 60× faster than brute-force with near-optimal results.**
 
-# Install dependencies
-npm install
+| Metric | Value |
+|--------|-------|
+| 🔢 Search space | 1,000+ item combinations |
+| 🏆 Optimal solution rate | 97% |
+| ⚡ Speed vs brute-force | 60× faster |
+| 📉 Convergence improvement | 45% faster |
+| 🔄 Generations | 50 |
 
-# Start dev server
-npm run dev
+**Algorithm:** DEAP Genetic Algorithm (selection · crossover · mutation)
 
-# Build for production
-npm run build
+**Highlights:**
+- Implemented full GA pipeline: population init, fitness evaluation, tournament selection, uniform crossover, and bit-flip mutation
+- Tuned population size, crossover rate, and mutation probability to maximize convergence speed
+- 97% optimal solution rate across 1,000+ test combinations within 50 generations
+- 45% faster convergence vs standard GA baseline through adaptive parameter tuning
 
-# Deploy to GitHub Pages
-npm run deploy
+**Tech Stack:** `Python` `DEAP` `NumPy` `Matplotlib`
+
+---
+
+## 🤖 LangGraph AI Agent
+
+**Autonomous multi-step AI agent built with LangGraph for dynamic task planning, tool use, and execution.**
+
+| Feature | Detail |
+|---------|--------|
+| 🧠 Framework | LangGraph (stateful agent graphs) |
+| 🔄 Architecture | Multi-node DAG with conditional routing |
+| 🛠️ Capability | Autonomous task planning & execution |
+| 🔗 Tools | Integrated external tools & APIs |
+
+**Highlights:**
+- Designed a stateful LangGraph pipeline with planning, tool-calling, and reflection nodes
+- Implemented conditional edge routing to dynamically re-plan based on intermediate results
+- Agent autonomously decomposes high-level goals into sub-tasks and executes them sequentially
+- Supports human-in-the-loop checkpoints for approval on critical steps
+
+**Tech Stack:** `Python` `LangGraph` `LangChain` `OpenAI API` `LangSmith`
+
+---
+
+## 🛠️ Tech Stack Overview
+
+```
+Languages       Python
+ML / DL         Scikit-learn · XGBoost · TensorFlow · Keras · DEAP
+Explainability  SHAP · LIME
+AI Agents       LangGraph · LangChain · OpenAI API
+Data            Pandas · NumPy
+Visualization   Matplotlib · Seaborn
+Tracking        LangSmith
 ```
 
 ---
 
-## 📁 Project Structure
-
-```
-Portfolio/
-├── public/
-│   ├── Tushar_Poonia_Resume.pdf   ← Resume (place here)
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── About.jsx
-│   │   ├── Experience.jsx
-│   │   ├── Projects.jsx
-│   │   ├── Skills.jsx
-│   │   ├── Resume.jsx
-│   │   └── Contact.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── index.html
-├── vite.config.js
-└── package.json
-```
-
----
-
-## ✦ Sections
-
-- **Hero** — Name, title, bio, key stats (60+ APIs, 100M+ rows, 3× EoM award)
-- **About** — Background, philosophy, education, awards
-- **Experience** — TCS roles with quantified impact bullets
-- **Projects** — ML projects with accuracy metrics and tech stacks
-- **Skills** — Categorized technical skills
-- **Resume** — PDF download + view inline
-- **Contact** — Social links + contact form
-
----
-
-## 📄 Resume
-
-Place your resume PDF at `public/Tushar_Poonia_Resume.pdf` — the Resume section will automatically link to it for download and inline viewing.
-
----
-
-## 📬 Contact
-
-| | |
-|---|---|
-| **Email** | tpoonia@mail.yu.edu |
-| **Phone** | 551-362-7610 |
-| **Location** | Jersey City, NJ |
-| **LinkedIn** | [linkedin.com/in/tushar-poonia](https://www.linkedin.com/in/tushar-poonia) |
-
----
-
-<div align="center">
-  <sub>Built with React + Vite · Deployed on GitHub Pages</sub>
-</div>
+*Feel free to explore each project folder for notebooks, results, and detailed documentation.*
